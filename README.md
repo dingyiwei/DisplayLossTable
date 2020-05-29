@@ -19,7 +19,7 @@ for epoch in range(10):
     dt.display(epoch, iteration, loss_data)
   val_loss = validate(...)
   print('val: {}'.format(val_loss))
-dt.end()
+  dt.end()
 ```
 
 Then the console displays:
