@@ -132,6 +132,6 @@ dt.display(0, 0, loss_data)
 
 ## Why need to call `end()` at the end of an epoch
 
-When `display(...)` called, `DisplayLossTable` records how many rows printed this time and print the same number of `\x1b[1A` for the next refreshing. At the end of an epoch, we may have to print some validation information. It `end()` is not called, the information will be print on the first row of the table.
+When `display(...)` called, `DisplayLossTable` records how many rows printed this time and print the same number of `\x1b[1A` for the next refreshing. At the end of an epoch, we may have to print some validation information. If `end()` is not called, the information will be print on the first row of the table.
 
 If you do not want to show tables for every epoch, it is unnecessary to call `end()`.
